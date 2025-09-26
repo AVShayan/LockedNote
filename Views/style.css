@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Segoe UI",sans-serif;
+    background: #14161cd9;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display:flex;
+    width:100%;
+    height: 100vh;
+}
+
+.form-section{
+    flex:1;
+    padding: 4rem;
+    background: #14161c;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.subtitle{
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.accent{
+    color:#3b82f6;
+}
+
+.switch-text{
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+}
+.switch-text a{
+    color: #3b83f6;
+    text-decoration: none;
+}
+
+form input{
+    width: 75%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1rem;
+    background: #1e1f25;
+    color:#fff;
+    font-size: 1rem;
+}
+
+.actions{
+    display: inline-flex;
+    gap: 233px;
+    align-items: center;
+}
+.primary-btn, .secondary-btn{
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.primary-btn{
+    background: #3a3b42;
+    color:white;
+}
+.secondary-btn{
+    background: #3a3b42;
+    color:white;
+}
+.primary-btn:hover , .secondary-btn:hover{
+    background-color: #2563eb;
+}
+.divider{
+    position: absolute;
+    right: 550px;
+    top:0px;
+    height: 100%;
+    width: 80px;
+}
+.divider path{
+    fill: #14161c;
+    fill-opacity: 1;
+    opacity: 1;
+}
+.image-section{
+    flex: 1;
+    background: #000 url('./image.jpg') right center/cover no-repeat;
+    position: relative;
+}
+.image-section .overlay{
+    position: absolute;
+    top:0; left: 0;
+    right:0; bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.form-message{
+    text-align: center;
+    position: absolute;
+    top:428px;left:200px;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color:red;
+}
